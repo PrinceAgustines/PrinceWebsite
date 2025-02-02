@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLL</title>
+</head>
+<style>
+    body {
+        background-image: url("DLLOPACITYLOW.png");
+    }
+
+    h1 {
+        color:  rgba(255, 255, 0, 0.89);
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-color: rgba(255, 255, 0, 0.726);
+    }
+
+    nav {
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+        color: blue;
+        background-color: rgba(255, 255, 0, 0.89);
+        width: auto;
+    }
+
+    #trNav {
+        border: 1px;
+        border-color: blue ;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #tablebody {
+        border: 1px solid transparent;
+        border-radius: 10%;
+        border-collapse: collapse;
+        width: auto;
+    }
+
+    .left1 {
+        background-color: rgb(0, 0, 77);
+        text-align: justify;
+        color: rgba(255, 255, 0, 0.89);
+        font-weight: bold;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .right1 {
+        background-color: rgba(255, 255, 0, 0.11);
+        text-align: justify;
+        color: rgba(255, 255, 0, 0.89);
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    #studpic {
+        height: 250px; 
+        width: 450px;
+    }
+
+    #logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    @media screen and (min-width: 1080px) {
+        #studpic {
+        height: 300px; 
+        width: 500px;
+        padding-left: 13%;
+    }
+
+        #logo {
+        height: 250px;
+        width: 250px;
+        padding-left: 12%;
+    }
+    }
+
+    @media screen and (min-width: 726px) {
+        #studpic {
+        height: 300px; 
+        width: 500px;
+    }
+
+        #logo {
+        height: 250px;
+        width: 250px;
+    }
+    }
+
+    @media screen and (max-width: 360px) {
+        h1, #trNav, .right1, .left1 {   
+            display: flex;
+            flex-direction: column;
+        }
+        #logo{
+            padding-left: 27%;
+        }
+    }
+</style>
+<body>
+    <table id="tablebody">
+        <tr>
+            <th colspan="4"><h1>Dalubhasaan ng Lungsod ng Lucena</h1></th>
+        </tr>
+        <tr id="trNav">
+            <th><nav>HOME</nav></th>
+            <th><nav>PROGRAMS OFFERED</nav></th>
+            <th><nav>CONTACTS</nav></th>
+            <th><nav>ABOUT</nav></th>
+        </tr>
+        <tr>
+            <td class="left1">Dalubhasaan ng Lungsod ng Lucena (DLL) is a local government-funded college located in Lucena City, Philippines.
+                It was established to provide affordable and quality higher education to residents of Lucena and nearby areas.<br>
+                <img id="logo" src="DLL LOGO.png" alt="DLL LOGO Picture">
+            </td>
+            <td class="right1" colspan="3">DLL offers a variety of undergraduate programs aimed at equipping students with the skills and knowledge needed for professional 
+                and personal growth. The institution often focuses on fields that align with local and national development goals, such as education, 
+                business, technology, and other community-relevant courses. Its mission typically includes fostering accessible education, promoting 
+                excellence, and contributing to the socio-economic development of the region.<br>
+                <img id="studpic" src="DLLSTUDENTS.png" alt="DLL LOGO Picture">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
